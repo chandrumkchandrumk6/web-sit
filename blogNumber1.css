@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+q{
+    font-weight: 400;
+}
+.blog .blogPost img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 15px 0;
+
+}
+.blog .blogPost ul{
+    margin: 30px 15px;
+}
+.blog .blogPost ul li{
+    padding: 20px;
+}
+@media (max-width: 900px){
+    .blog .blogPost ul{
+        margin: 30px 20px;
+    }
+}
+@media (max-width: 450px) {
+    .blog .blogPost img {
+        padding: 8px 0;
+        width: 100%;
+    }
+    .blog .blogPost ul{
+        margin: 15px;
+    }
+}
+@media (max-width: 450px){
+    .blog .blogPost ul{
+        margin: 10px 15px;
+    }
+}

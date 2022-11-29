@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+footer {
+  position: absolute;
+  background-color: #292c2f;
+  background-size: cover;
+  height: auto;
+  width: 100%;
+  padding-top: 40px;
+  color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+.footer-content h4 {
+  margin: 10px;
+  font-weight: 400;
+  font-size: 1.5em;
+  margin-top: 20px;
+  line-height: 28px;
+  color: #fff;
+}
+
+.footer-content h4 span {
+  color: #00ffff;
+}
+
+.footer-box {
+  margin: 2rem 5rem;
+  height: 350px;
+}
+
+.footer-box ul {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.footer-box ul li {
+  margin: 0.8rem 0.5rem;
+}
+
+.footer-box p {
+  color: #fff;
+}
+
+.footer-box ul a {
+  text-decoration: none;
+  font-weight: 200;
+  padding-top: 10px;
+  font-size: 1.1em;
+}
+
+.footer-box ul a i {
+  display: flex;
+  color: #fff;
+  margin: 10px;
+}
+
+.footer-box ul p {
+  margin: 0rem 1rem;
+}
+
+.footer-content .social-link1,
+.footer-content .social-link2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-content .social-link3 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.footer-bottom {
+  height: 40px;
+  background-color: #111;
+}
+
+.footer-bottom p {
+  color: #fff;
+  text-align: center;
+  font-weight: 200;
+  font-size: 0.8em;
+  padding-top: 10px;
+}
+
+.footer-bottom p a {
+  text-decoration: none;
+  color: #00ffff;
+}
+
+@media (max-width: 1405px) {
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer-box {
+    margin: 2rem 0.5rem;
+  }
+
+}
+
+@media (max-width: 640px) {
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer-content h4 {
+    text-align: center;
+  }
+
+  .footer-box {
+    height: unset;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .footer-box ul {
+    margin-top: unset;
+  }
+
+  .footer-box ul a {
+    padding-top: 5px;
+    font-size: 1em;
+  }
+
+}
+
+@media (max-width: 300px) {
+  .footer-bottom p {
+    padding: 0;
+  }
+}

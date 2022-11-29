@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="/images/logo02.png">
+    <title>Thanks | MoucTechy</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="thanks.css">
+
+
+<body>
+    <header>
+        <a href="index.html" class="logo">MoucTechy</a>
+        <div class="menuToggle" onclick="toggleMenu();">
+        </div>
+        <ul class="navigation">
+            <li><a href="index.html" onclick="toggleMenu(); changeTitle ('Home | MoucTechy');">Home</a></li>
+            <li><a href="index.html#about" onclick="toggleMenu(); changeTitle ('About | MoucTechy');">About</a></li>
+            <li><a href="blog.html" onclick="toggleMenu(); changeTitle ('Blog | MoucTechy');">Blog</a> </li>
+            <li><a href="blog.html#books" onclick="toggleMenu(); changeTitle ('Books | MoucTechy');">Books</a></li>
+            <li><a href="blog.html#pausti" onclick="toggleMenu(); changeTitle ('Pausti | MoucTechy');">Pausti</a></li>
+            <li><a href="#contact" onclick="toggleMenu(); changeTitle ('Contact | MoucTechy');">Contact</a></li>
+        </ul>
+    </header>
+    <div class="return">
+    <h2>Success! Thank you for contacting us!</h2> 
+    <a href="blog.html">Return to my Blog</a>
+    </div>
+
+    
+    <script src="index.js"></script>
+    <script>
+        if (window.history.replaceState) {
+            window.history.replaceState(null, null, window.location.href);
+        }
+    </script>
+</body>
+
+</html>

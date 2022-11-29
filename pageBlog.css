@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+
+.banner {
+  position: relative;
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url(images/blog6.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.btn {
+  margin-top: 170px;
+}
+h5{
+  font-weight: 400;
+  font-size: 1em;
+}
+
+/*=========Media query for header==========*/
+
+@media (max-width: 640px) {
+
+  header,
+  header.sticky {
+    padding: 10px 25px;
+  }
+
+  header .logo {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-decoration: none;
+  }
+  .banner {
+    height: 15vh;
+  }
+  .btn{
+    display: none;
+  }
+}
+
+@media (max-width: 380px) {
+
+  header,
+  header.sticky {
+    padding: 10px 5px;
+  }
+  .banner {
+    height: 10vh;
+  }
+}
+
+

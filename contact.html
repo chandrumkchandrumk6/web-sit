@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="images/logo02.png">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <title>Contact | MoucTechy</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">MoucTechy</a>
+        <div class="menuToggle" onclick="toggleMenu();">
+        </div>
+        <ul class="navigation">
+            <li><a href="index.html" onclick="toggleMenu(); changeTitle ('Home | MoucTechy');">Home</a></li>
+            <li><a href="index.html#about" onclick="toggleMenu(); changeTitle ('About | MoucTechy');">About</a></li>
+            <li><a href="blog.html" onclick="toggleMenu(); changeTitle ('Blog | MoucTechy');">Blog</a> </li>
+            <li><a href="blog.html#books" onclick="toggleMenu(); changeTitle ('Books | MoucTechy');">Books</a></li>
+            <li><a href="blog.html#pausti" onclick="toggleMenu(); changeTitle ('Pausti | MoucTechy');">Pausti</a></li>
+            <li><a href="#contact" onclick="toggleMenu(); changeTitle ('Contact | MoucTechy');">Contact</a></li>
+        </ul>
+    </header>
+
+    <!--==============HEADER===============-->
+    <section class="banner" id="banner">
+    </section>
+
+    <!--================Contact-Form==============-->
+    <div class="container" id="contact">
+        <span class="big-circle"></span>
+        <div class="form">
+            <div class="contact-info">
+                <h3 class="title">Let's get in touch</h3>
+                <p class="text">
+                    We will reply within the minutes!
+                </p>
+                <div class="info">
+                    <div class="information">
+                        <img src="images/email1.PNG" class="icon" alt="" />
+                        <p>mklecodeur@gmail.com</p>
+                    </div>
+                    <div class="information">
+                        <img src="images/location2.png" class="icon" alt="" />
+                        <p>Jkuat, KE Nairobi</p>
+                    </div>
+                    <div class="information">
+                        <img src="images/mobile.png" class="icon" alt="" />
+                        <p>+254-758-375-665</p>
+                    </div>
+                </div>
+            </div>
+            <div class="social-media">
+                <p>Connect with me :</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/mklepanafricaniste/" class="new_Window">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/thierno-amadou-mouctar-balde-595578155/" class="new_Window">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/MuktarBalde" class="new_Window">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCTJqEvE24klETyG6631IUSw" class="new_Window">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+
+                </div>
+            </div>
+            <div class="contact-form">
+                <span class="circle one"></span>
+                <span class="circle two"></span>
+
+                <form action="https://formsubmit.co/mklecodeur@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="Contact-Mouctechy!">
+                    <h3 class="title">Contact us</h3>
+                    <input type="hidden" name="_next" value="https://mouctechy.com/thanks.html">
+                    <input type="hidden" name="_captcha" value="false">
+                    <div class="input-container">
+                        <input type="text" name="name" class="input" minlength="3" maxlength="15" required />
+                        <label for="">Username</label>
+                        <span>Username</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="email" name="email" class=" input" required />
+                        <label for="">Email</label>
+                        <span>Email</span>
+                    </div>
+
+                    <div class="input-container">
+                        <input type="subject" name="subject" class="input" minlength="3" maxlength="10" required />
+                        <label for="">Subject</label>
+                        <span>Subject</span>
+                    </div>
+
+                    <div class="input-container textarea">
+                        <textarea name="message" class=" input" minlength="5" maxlength="300" required></textarea>
+                        <label for="">Message</label>
+                        <span>Message</span>
+                    </div>
+                    <input type="submit" value="Send" class="submit" id="btn" />
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-box">
+                <h4><span>C</span>ontact-us /<span> A</span>ddress</h4>
+                <ul class="social-link1">
+                    <li><a href="#"><i class="fa fa-location-arrow">
+                                <p>KE, JUJA/JKUAT</p></i>
+                        </a></li>
+                    <li><a href="#"><i class="fa fa-phone-square">
+                                <p> +254-758-375-665</p></i>
+                    <li><a href="#"><i class="fa fa-envelope">
+                                <p>contact@mouctechy.com</p></i>
+                        </a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <h4>My <span>Best</span> Plat<span>forms</span></h4>
+                <ul class="social-link2">
+                    <li><a href="https://www.coursera.org" class="new_Window"><i class="fa fa-university">
+                                <p>Coursera</p>
+                            </i>
+                        </a></li>
+                    <li><a href="https://www.b-ok.africa" class="new_Window"><i class="fa fa-book">
+                                <p>z-Library</p>
+                            </i>
+                        </a></li>
+                    <li><a href="https://www.w3schools.com/" class="new_Window"><i class="fa fa-code">
+                                <p> W3School</p>
+                            </i>
+                        </a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/" class="new_Window"><i class="fa fa-question">
+                                <p>MDN web docs</p>
+                            </i> </a></li>
+                    <li><a href="https://www.pluralsight.com/" class="new_Window"><i class="fa fa-play-circle">
+                                <p>Pluralsight</p>
+                            </i>
+                        </a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h4>Fol<span>low</span> me </h4>
+                <ul class="social-link3">
+                    <li><a href="https://www.facebook.com/mklepanafricaniste/" class="new_Window"><i
+                                class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/thierno-amadou-mouctar-balde-595578155/"
+                            class="new_Window"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://twitter.com/MuktarBalde" class="new_Window"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li><a href="https://www.youtube.com/channel/UCTJqEvE24klETyG6631IUSw" class="new_Window"><i
+                                class="fab fa-youtube"></i></a></li>
+                    <li><a href="https://github.com/MUK94" class="new_Window"><i class="fab fa-github"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2021 MoucTechy. powered by <span> <a href="https://twitter.com/MuktarBalde"
+                        class="new_Window">Mouctar</a> </span></p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+    <script>
+        if (window.history.replaceState) {
+            window.history.replaceState(null, null, window.location.href);
+        }
+    </script>
+</body>
+
+</html>

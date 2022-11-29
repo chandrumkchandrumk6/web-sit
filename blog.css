@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+.blog {
+  padding: 100px;
+  margin: -5% 5% 0;
+  font-weight: 300;
+  font-size: 1.1em;
+}
+
+.blog .blogTitle {
+  text-align: center;
+  padding: 4% 0 3% 0;
+
+}
+
+.blog .blogTitle a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-size: 1.9em;
+
+}
+
+.blog .border {
+  border-radius: 5px;
+  background: #ececec;
+}
+
+.blog .border .blog-content {
+  margin: 0 20px;
+}
+
+.blog .border .blog-content .blog-header p {
+  margin: 10px 0;
+  padding: 0;
+  font-size: 1em;
+}
+
+
+.blog .share-btn {
+  display: flex;
+  margin: 5px 0;
+  padding-bottom: 2%;
+  font-size: 1.1em;
+}
+
+.fb-share-button,
+.twitter-follow-button {
+  margin: 0 3px;
+}
+
+.blog .border .references {
+  font-size: 1.1em;
+  font-weight: 400;
+  padding-top: 4%;
+  color: red;
+}
+
+.blog .border .reference-link {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2%;
+  margin: 0 15px;
+}
+
+.blog .border .reference-link a {
+  text-decoration: none;
+  color: #000;
+}
+
+/*
+
+.blog .border .blogPost .video-responsive {
+  margin: 5% 10%;
+  border: 1px solid #111;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+*/
+
+/*=========Media query for About==========*/
+@media (max-width: 991px) {
+  .blog {
+    padding: 20px;
+    margin: 0 2%;
+  }
+
+  .blog-message p {
+    font-size: 1.7em;
+  }
+
+  .blog .border {
+    border-right: none;
+    border-left: none;
+    background: none;
+  }
+
+  .blog .blogTitle a {
+    font-size: 1.3em;
+  }
+
+  .blog .timePost a {
+    flex-direction: column;
+    margin: 15px 0;
+    line-height: 1.4em;
+  }
+
+  .blog .border .blog-content {
+    margin: 0 2px;
+  }
+
+  .blog .blogPost {
+    font-size: 1rem;
+  }
+
+  .blog .border .blogPost .video-responsive {
+    margin: 1% 2%;
+  }
+
+  .blog .border .references {
+    font-size: 1em;
+  }
+
+  .blog .border .reference-link {
+    font-size: 0.8em;
+    font-weight: 200;
+    margin: 0;
+  }
+
+}
+
+@media (max-width: 460px) {
+  .blog .blogTitle a {
+    font-size: 1.2em;
+  }
+  /*
+    .blog .border .blogPost .video-responsive {
+      margin: 2% 0;
+    }*/
+
+  .blog .border .references {
+    font-size: 1em;
+  }
+
+  .blog .border .reference-link {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 250px) {
+  .blog .blog-header .author {
+    width: 90px;
+    font-size: 1.1em;
+  }
+
+  .blog .blog-header .link-author {
+    font-size: 1.1em;
+  }
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Tech Blog">
+    <meta name="keywords" content="technology, africa, Studying">
+    <meta name="author" content="Mouctar Muktar">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="images/logo02.png">
+    <title>Home | MoucTechy</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+
+</head>
+
+<body>
+    <div id="preloader"></div>
+    <!--///MENU///-->
+    <header>
+        <a href="#home" class="logo">MoucTechy</a>
+        <div class="menuToggle" onclick="toggleMenu();">
+        </div>
+        <ul class="navigation">
+            <li><a href="index.html" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu(); changeTitle ('About | MoucTechy');">About</a></li>
+            <li><a href="blog.html" onclick="toggleMenu();">Blog</a> </li>
+            <li><a href="blog.html#books" onclick="toggleMenu();">Books</a></li>
+            <li><a href="blog.html#pausti" onclick="toggleMenu();">Pausti</a></li>
+            <li><a href="contact.html" onclick="toggleMenu(); " class="new_Window">Contact</a></li>
+        </ul>
+    </header>
+
+    <!--==============HEADER===============-->
+    <section class="banner" id="home">
+        <div class="content">
+            <h2>Pure Learning<span>.</span> Pure Power</h2>
+            <p>Practical Knowledge <span>-</span> Go for it<span>!</span></p>
+            <a href="blog.html" onclick="changeTitle ('Blog | MoucTechy')"
+                class="btn">visit my blog</a>
+        </div>
+    </section>
+    <!--==============ABOUT===============-->
+    <div class="about" id="about">
+        <div class="rowabout">
+            <div class="col50about1">
+                <h2 class="titleText"><span>A</span>bout</h2>
+                <p>I' m Amadou Mouctar, a Telecommunication Research Engineer at Pan- African University for
+                    Basic Sciences, Technology and Innovation - PAUSTI, a certified Google IT Support Specialist
+                    and a multimedia content creator. <br> I am a tech enthusiast and learner. I like coding,
+                    designing websites and writing blogs. 
+                    I also love cooking, reading Business
+                    books, and learning English. <br> I created this platform to document my academic journey, practice
+                    my coding skills and build my career in tech areas that are passionate me the most.
+                </p>
+                <a href="https://www.linkedin.com/in/thierno-amadou-mouctar-balde-595578155/" class="new_Window"
+                    id="click">read more</a>
+            </div>
+            <div class="col50about2">
+                <div class="imgBxabout">
+                    <img src="images/img11.jpg" alt="himself">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script>
+        if (window.history.replaceState) {
+            window.history.replaceState(null, null, window.location.href);
+        }
+    </script>
+    <script>
+        let loader = document.getElementById("preloader");
+        window.addEventListener("load", function () {
+            loader.style.display = "none";
+        })
+    </script>
+</body>
+
+</html>
